@@ -14,9 +14,7 @@ document.getElementById('login-submit').addEventListener('click', function () {
       window.location.href = 'bank.html';
       console.log('valid')
    }
-   else if (formSubmitLogin == '' && passwordSubmitLogin == '') {
 
-   }
    else {
       alert('invalid password or email');
    }
