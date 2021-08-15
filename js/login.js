@@ -10,7 +10,7 @@ document.getElementById('login-submit').addEventListener('click', function () {
    // ........................
    const passwordSubmitLogin = passwordSubmit.value;
 
-   if (formSubmitLogin == 'my@gmail.com' && passwordSubmitLogin == 12345) {
+   if (passwordSubmitLogin == 12345) {
       window.location.href = 'bank.html';
       console.log('valid')
    }
