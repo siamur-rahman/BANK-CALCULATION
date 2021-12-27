@@ -10,7 +10,7 @@ document.getElementById('login-submit').addEventListener('click', function () {
    // ........................
    const passwordSubmitLogin = passwordSubmit.value;
 
-   if (passwordSubmitLogin == 12345) {
+   if (passwordSubmitLogin == 123) {
       window.location.href = 'bank.html';
       console.log('valid')
    }
@@ -19,3 +19,4 @@ document.getElementById('login-submit').addEventListener('click', function () {
       alert('invalid password or email');
    }
 })
+

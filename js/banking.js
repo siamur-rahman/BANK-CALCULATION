@@ -1,8 +1,11 @@
+
 document.getElementById('diposit-submit').addEventListener('click', function () {
    // DEPOSIT E input ER .value hoccche new amount ...
+
    const depositInput = document.getElementById('deposit-input');
    const newDepositAmount = depositInput.value;
    const newDepositTotal = parseFloat(newDepositAmount);// parseFloat
+
 
    // DEPOSIT E tag ER .innerText hocche old amount ...
    const depositText = document.getElementById('deposit-total');

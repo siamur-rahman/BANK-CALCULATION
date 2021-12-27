@@ -9,13 +9,38 @@
    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 
 </head>
+<style>
+   body {
+      background-image: url(Clip-Artof-Bank-4.jpg);
+      background-repeat: no-repeat;
+      /* background-image: url(https://media.istockphoto.com/photos/glass-and-steel-bank-corporate-building-picture-id479137569?k=20&m=479137569&s=612x612&w=0&h=BvDTNacQC_LASRgqjLKHvBAPuh4oxH9jygPGDxCW5O4=); */
+
+   }
+
+   .login-submit:hover {
+      background-color: darkgreen;
+
+   }
+
+   .login-cencel:hover {
+      background-color: rgb(211, 52, 16);
+
+   }
+
+   .button-style {
+      display: flex;
+      justify-content: space-around;
+      color: black;
+
+   }
+</style>
 
 <body>
 
 
    <header>
-      <h1 class=" text-5xl text-center mt-16">
-         Welcome To My <span class=" font-semibold text-purple-600">Baap-er-Bank</span>!!!
+      <h1 class=" text-5xl text-center mt-16 text-yellow-200">
+         Welcome To My <span class=" font-semibold text-purple-400">Baap-er-Bank</span>!!!
       </h1>
 
 
@@ -23,18 +48,26 @@
 
    <main>
 
-      <section class="bg-green-200 w-3/4 p-8 mx-auto mt-8">
-         <h3 class=" text-2xl mb-4">
+      <section class=" w-3/4 p-8 mx-auto mt-8">
+         <h3 class=" text-2xl mb-4 ms-8 text-white text-center ">
             please log in
          </h3>
          <div>
-            <input id="form-submit" class="border w-3/4 mb-3 p-2 block border-gray-400 rounded " type="text"
+            <input id="form-submit" class="border w-3/4 mx-auto mb-3 p-2 block border-gray-400 rounded " type="text"
                placeholder="your email">
 
-            <input id="password-submit" class="border w-3/4 mb-3 p-2 block border-gray-400 rounded" type="password"
-               placeholder="password">
+            <input id="password-submit" class="border mx-auto w-3/4 mb-3 p-2 block border-gray-400 rounded"
+               type="password" placeholder="password">
+            <div class=" w-3/4  mx-auto button-style">
+               <button id="login-submit"
+                  class="login-submit text-center  text-purple-400 px-4 mb-3 rounded py-2  font-medium border lg:border-yellow-400  mx-2">submit
+               </button>
+               <button
+                  class="login-cencel text-center mb-3 text-purple-400 px-4 rounded py-2  font-medium border border-yellow ">
+                  cencel
+               </button>
+            </div>
 
-            <button id="login-submit" class="bg-yellow-600 px-4 rounded py-2 text-white font-medium">submit</button>
          </div>
       </section>
    </main>
